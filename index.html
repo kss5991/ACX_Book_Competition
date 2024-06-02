@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Book Name</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+        .item {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Read this one next</h1>
+        <div id="randomItem" class="item"></div>
+    </div>
+    <script>
+        const list = [
+            "A Canticle For Leibowitz",
+            "A Farewell to Alms",
+            "A Practical Guide to Evil",
+            "A Thousand Ways to Please A Husband",
+            "A Visit from the Goon Squad",
+            "Against Democracy",
+            "Age of Anger",
+            "All Systems Red",
+            "Alphabetical Diaries",
+            "American Nations",
+            "Armies of Sand",
+            "Asquith",
+            "Atlas Shrugged",
+            "Babel",
+            "Bad Therapy",
+            "Battle Hymn of the Tiger Mother",
+            "Biophilia",
+            "Carpentaria",
+            "Cat's Cradle",
+            "Catkin",
+            "Choosing Elites",
+            "Collected Poems by C.P. Cavafy",
+            "Consequences of Language",
+            "Defining Death",
+            "Determined: A Science of Life Without Free Will",
+            "Discrimination and Disparities",
+            "Djinn",
+            "Dominion",
+            "Don Juan",
+            "Don't Make No Waves, Don't Back No Losers",
+            "Egypt's Golden Couple",
+            "Elon Musk",
+            "End Times",
+            "Eothen",
+            "Eve",
+            "Food of the Gods",
+            "For Whom the Bell Tolls",
+            "Frankenstein",
+            "Free Range Kids",
+            "Fundamentals of Marxism-Leninism",
+            "Gnomon",
+            "Godel, Escher, Bach",
+            "Golem XIV",
+            "How Language Began",
+            "How the War Was Won",
+            "HP Lovecraft",
+            "Impossible Histories",
+            "In Search of Lost Time",
+            "In the Time of the Russias",
+            "Invisible Cities",
+            "It's Not the Money, It's the Land",
+            "Letter to a Christian Nation",
+            "Libra",
+            "License to be Bad: How Economics Corrupted Us",
+            "Little, Big",
+            "Making the Corps",
+            "Metamorphosis",
+            "Mine!",
+            "Misbelief",
+            "Money Capital",
+            "Never Twice in the Same River",
+            "Nexus",
+            "Nine Lives",
+            "Normal Accidents",
+            "On the Bondage of the Will",
+            "One-Dimensional Man",
+            "Paradoxes of Rationality and Cooperation",
+            "Passionate Marriage",
+            "Patient, Heal Thyself",
+            "Piranesi",
+            "Politics on the Edge",
+            "Practical Ethics",
+            "r!Animorphs",
+            "Ready Player One",
+            "Real Raw News",
+            "Red Rising",
+            "Righteous Victims",
+            "What Came Next",
+            "My Thoughts Road of the King",
+            "Sadly, Porn",
+            "Safe Enough?",
+            "Savage Money",
+            "Secret Agenda: Watergate",
+            "Sense of Style",
+            "Silver Age Marvel Comics",
+            "Sir Gawain and the Green Knight",
+            "Spring Snow",
+            "Stillwell and the American Experience in China",
+            "Sudden Glory",
+            "Surviving Death",
+            "The Art of Happiness",
+            "The Autobiography of Yukichi Fukuzawa",
+            "The Ballad of the White Horse",
+            "The Beauties",
+            "The Beginning of Infinity",
+            "The Body Keeps the Score",
+            "The British Industrial Revolution in Global Perspective",
+            "The Case Against Reality",
+            "The Complete Rhyming Dictionary and Poet's Craft Book",
+            "The Divine Comedy",
+            "The Emperor of All Maladies",
+            "The Eternaut",
+            "The Ethics of Ambiguity",
+            "The Family That Couldn't Sleep",
+            "The Four Hour Workweek",
+            "The Genesis Machine",
+            "The Globe: How The Earth Became Round",
+            "The Hebrew Bible",
+            "The History of the Rise and Influence of the Spirit of Rationalism in Europe",
+            "The Hunt for Red October",
+            "The Iliad",
+            "The Lady of Shalott",
+            "The Land of Milk and Honey / The Lathe of Heaven",
+            "The Language Puzzle",
+            "The Leopard",
+            "The Many Worlds of Hugh Everett",
+            "The Master and Margarita",
+            "The Meme Machine",
+            "The Metamorphosis",
+            "The Metaphysical Club",
+            "The Mezzanine and the Size of Thoughts",
+            "The Nature and Origins of Mass Opinion / Win Bigly",
+            "The Old Testament",
+            "The Oldest Documents of the Human Race",
+            "The Pale King",
+            "The Pattern Seekers: How Autism Drives Human Invention",
+            "The Picture of Dorien Gray",
+            "The Remains of the Day",
+            "The Revelations",
+            "The Signal and the Noise",
+            "The Sixth Day and Other Tales",
+            "The Story of Ferdinand",
+            "The Structure of Scientific Revolutions",
+            "The Sunset Limited",
+            "The Tango of Ethics",
+            "The Treuhand",
+            "The Trial",
+            "The Unconsoled",
+            "The Untethered Soul",
+            "The Vegetarian",
+            "The Wages of Destruction",
+            "The Wheel of Time",
+            "The Zoologist's Guide to the Galaxy",
+            "Three Days in Dwarfland",
+            "Time Loops",
+            "Two Arms and a Head",
+            "War and Peace",
+            "Warrior's Woman",
+            "What Even Is Gender?",
+            "When We Cease To Understand The World",
+            "Who We Are And How We Got Here",
+            "Why Fish Don't Exist",
+            "Winnie-the-Pooh / The House At Pooh Corner",
+            "Wonderful Life: The Burgess Shale and the Nature of History",
+            "World Empire Lost",
+            "Young Adults"
+        ];
+        const randomIndex = Math.floor(Math.random() * list.length);
+        document.getElementById('randomItem').textContent = list[randomIndex];
+    </script>
+</body>
+</html>
